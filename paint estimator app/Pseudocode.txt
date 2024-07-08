@@ -1,0 +1,40 @@
+1. Start
+2. Initialize Area=0, wallWidth=0, wallHeight=0, objectWidth=0, objectHeight=0
+3. Display "Let's start with first room"
+//Collecting data for the room 
+4. Display: "Let's start with the first wall of this room."
+//Collecting data for the wall
+5. Prompt: "Enter the height of the wall"
+6. Store the user input in wallHeight
+7. Prompt: "Enter the width of the wall"
+8. Store the user input in wallWidth
+9. Area = Area + (wallWidth * WallHeight) 
+10.Prompt: "Is there any window/door or anything else on the wall where paint is not required? Yes/No"
+12.Did user select "Yes" ?
+         Yes:
+13.      Prompt: "Enter the height of the object."
+14.      Store the user input in objectHeight
+15.      Prompt: "Enter the width of the object."
+16.      Store the user input in objectWidth
+17.      Area = Area - (objectWidth * objectHeight) 
+18.      Prompt: "Is there any other object on this wall? Yes/No"
+19.      Did user select yes?
+                 Yes:
+20.              Go to step 13
+                 No:
+21.              Go to step 22
+22.Prompt: "Is there any other wall in this room?  Yes/No"
+23.Did User select Yes?
+          Yes:
+24.       Go to step 5
+          No:
+25.       Display "This room's required area has been successfully calulated!"
+26.       Prompt : "Is there any other room you want to add? Yes/No"
+27.       Did User select Yes?
+                  Yes:
+28.               Go to step 4
+29.Display "Yayy!! Measurements done"
+30.Return the value of Area variable
+31.End
+ 
+
