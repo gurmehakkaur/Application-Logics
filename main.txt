@@ -1,0 +1,25 @@
+1. Start
+//Value of PERISHABLE attribute for each item is determined on the basis of which subprocess is called
+2. Has the scanner detected any barcode?
+            YES:
+3.          Call Non-Perishable subprocess.
+4.          set PERISHABLE = 'N'
+5.          Do you want to add more item?
+                   YES:
+6.                 Go to step 2.
+                   NO:
+7.                 Call Receipt and Payment subprocess.               
+                   
+            No:
+8.          Did the user search for perishable item?
+                    YES:
+9.                  Call Perishable sub-process.
+10.                 set PERISHABLE = 'Y'
+11.                 Do you want to add more item?
+                          YES:
+12.                       Go to step 2
+                          NO:
+13.                       Call Receipt and Payment subprocess 
+14. End
+            
+             

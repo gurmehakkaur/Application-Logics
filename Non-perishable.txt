@@ -1,0 +1,18 @@
+1. Start
+2. Scan the barcode for SKU
+3. Is the barcode successfully scanned?
+       Yes:
+4.     Call product database.
+5.     Is the product found in database?
+		Yes:
+6.              Retrieve the ProuductPrice and productName through SKU                          
+7.              Return SKU.productName and SKU.ProuductPrice 
+	        No:
+8.              Display: Error. Item not found! Calling a supervisor
+9.              Make a call to the supervisor
+
+10. End.
+
+
+
+

@@ -1,0 +1,42 @@
+1. Start
+2. Recieve list of items from non-perishable and perishable logics, totalItems is the total number of items in the list
+3. declare i, subtotal, totalTax, Total = 0 
+4. Is i<totalItems?
+         YES:
+5.       Add ProductPrice amount to Subtotal
+6.       Is the current item a perishable item?
+                 YES:      
+7.               Update TAXED = 'N' for this item
+                 NO:
+8.               Current Item is Non-Perishable
+9.               Update TAXED = 'Y' for this item
+10.              Add 0.13*(Productprice) to the totalTax
+11.       Record itemName, value of TAXED variable, and ProductPrice for the current item for printing receipt.
+12.       Increment i by 1
+13.       Go to step 4
+14. Total = Subtotal + totalTax
+15. Display receipt on the screen including information from step 11 for each item, along with the values of SubTotal, totalTax and Total.
+16. Prompt the user to choose the Payment method.
+17. Call the Process Payment Blackbox and Pass it the value of 'Total'. 
+18. Did it get the signal from the Blackbox that the payment is successful?
+           YES:
+19.        Go to step 27.
+           NO:
+20.        Display "Payment Failed"
+21.        Go back to step 21.
+22. Prompt "Do you want a printed receipt?"
+           YES:
+23.        Print the Receipt displayed in step 15.
+24. Display "Thankyou"
+25. Exit  
+
+
+
+     
+                  
+           
+
+          
+         
+         
+        
