@@ -1,0 +1,16 @@
+1. Start
+2. Declare weight, quantity
+//User will select the item from the "Fetch Items by category" blackbox
+3. This blackbox returns a SKU based on the item selected by the user.
+4. Retrieve unitprice from database using SKU
+5. Is the item priced by weight?
+          YES:
+6.        Call weight item blackbox, which returns the value of 'weight'
+7.        Calculate the ProuductPrice by multiplying weight*unitprice 
+          NO:
+8.        It is priced by quantity
+9.        Prompt: Enter Quanity
+10.       Store the user input in variable 'quantity'
+11.       Calculate the ProuductPrice by multiplying quantity*unit price 
+12. Return SKU.productName and ProuductPrice 
+13. End
