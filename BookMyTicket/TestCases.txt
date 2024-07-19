@@ -1,0 +1,181 @@
+Test Case-1
+A. One senior, two adults, and one child go to see the theatre production of “Chewbacca
+Chew’s the Furniture” at 9:00 PM. They opt for the VIP valet treatment (tipping $7.50)
+and at intermission, indulge themselves with three wines, four bags of chips, and three
+Sprite soft drinks. What was the total cost?
+ 
+1. Start
+2. User Enters their email
+3. Is Email valid? : Yes
+4. Admission Program is called
+5. User Input: NumAdults = 2
+6. User Input: NumKids = 1
+7. User Input: NumSeniors = 1
+8. CoverCharges = (0.75*1) + (4.00*2) + (1.50*1) = 10.25
+9. TotalMembers = 2+1+1 = 4
+10. Back to main program
+11. FinalAmount = 10.25
+12. Ticket Program is called
+13. User Input:productionType = 2
+14. User Input: time = 9
+15. Is time>=12 && time<=4 ? : No
+16. slot = Evening
+17. Is productionType = 1? : No
+18. PerPerson = 115
+19. OriginalTicketsCost = 115 * 4 = 460
+20. Back to Main Program
+21. FinalAmount = 10.25 + 460 = 470.25
+22. Do you want to add Vallet Parking? : Yes
+23. Vallet Program is called
+24. Is slot = Matinee? : No
+25. ParkingFee = 20
+26. Is ValetType = VIP? : Yes
+27. ParkingFee = 20 + 20*0.5 = 30
+28. Output: Parking Fee = $30
+29. Back to main program
+30. FinalAmount = 470.25 + 30=  500.25
+31. Is Admission.Totalmembers > 1? :Yes
+32. Discount Program is called
+33. Is TotalMembers = 2? :No
+34. Is TotalMembers = 3? :No
+35. Is TotalMembers = 4? :Yes
+36. Discount = 460*0.20 = 92
+37. Back to main program
+38. Final Amount = 500.25-92 = 408.25
+39. Pay $50 to confirm registration
+40. Select Payment method
+41. Is Payment Received? : Yes
+42. FinalAmount = 408.25-50 = 358.25
+43. QR code is generated
+44. App's home screen shows QR code along with Make Final Payment Option
+45. Is QR code scanned? : Yes
+46. Do you want to exit the Menu? : No
+47. Snacks program is called
+48. Is there a purchase of any Non-Alcoholic beverage? : Yes
+49. Input: NonAlcBevQty = 3
+50. SnacksCost = 3*2.25 + 0 = 6.75
+51. Is there a purchase of any Alcoholic beverage? :Yes
+52. Input: alcBevQty = 3
+53. SnacksCost = 3*7.50 + 6.75 = 29.25
+54. Is there a purchase of any candy? : Yes
+55. Input: noOfCandies = 4
+56. SnacksCost = 4*1.75 + 29.25 = 36.25
+56. Back to main program
+57. FinalAmount = 358.25 + 36.25 = 394.5
+58. Is QR code scanned? : No
+59. Is "Make Final Payment" button pressed?: Yes
+60. Is Vallet.ParkingFee = 0 ? : No
+61. Do you want to add Vallet Tip? : Yes
+62. User Input: Tip = 7.50
+63. FinalAmount= 394.5 + 7.50= 402
+64. Receipt program is called
+65. Display: Total Members : 4
+66. Display: Total Admission Charges: $10.25
+67. Display: Type: Theatre   Timing: Evening  Total Ticket: $460
+68. Is Admission.TotalMembers > 0 ? :Yes
+69. Display: Additional Discount: $92
+70. Is main.SnackStandBill > 0? : Yes
+71. Display: Snacks: 6.75
+72. Is Vallet.ParkingFee > 0 ?: Yes
+73. Display: Parking: 30+7.50= $37.50
+74. Display: GrandTotal: 394.50 + 50 = 444.50
+75. Display: Already Paid: $50  Balance: $394.50
+76. Return to main program
+77. Prompt the User to pay FinalAmount and select Payment Method
+78. Is Payment Received? : yes
+79. FinalAmount = 0
+80. Is QR code Scanned? : Yes
+81. Do you want to exit the venue? : Yes
+82. Display: Balance: $0
+83. Is FinalAmount = 0? : Yes
+84. Prompt: Thankyou for the Visit.
+85. Exit
+
+
+
+Test Case-2
+Two adults go to see the musical of “Yoda Sings” at 2:00 PM. They don’t use the valet,
+but at intermission, indulge themselves with two wines and two bags of popcorn. What
+was the total cost?
+
+
+1. Start
+2. User Enters their email
+3. Is Email valid? : Yes
+4. Admission Program is called
+5. User Input: NumAdults = 2
+6. User Input: NumKids = 0
+7. User Input: NumSeniors = 0
+8. CoverCharges = (0.75*0) + (4.00*2) + (1.50*0) = 8.00
+9. TotalMembers = 2+0+0 = 2
+10. Back to main program
+11. FinalAmount = 8.00
+12. Ticket Program is called
+13. User Input:productionType = 1
+14. User Input: time = 2
+15. Is time>=12 && time<=4 ? : Yes
+16. slot = Matinee
+17. Is productionType = 1? : Yes
+18. PerPerson = 70
+19. OriginalTicketsCost = 70 * 2 = 140
+20. Back to Main Program
+21. FinalAmount = 8.00 + 140 = 148.00
+22. Do you want to add Vallet Parking? : No
+23. Is Admission.Totalmembers > 1? :Yes
+24. Discount Program is called
+25. Is TotalMembers = 2? :Yes
+26. Discount = 140*0.05 = 7
+27. Back to main program
+28. Final Amount = 148.00 - 7.00 = 141.00
+29. Pay $50 to confirm registration
+30. Select Payment method
+31. Is Payment Received? : Yes
+32. FinalAmount = 141.00 - 50 = 91
+33. QR code is generated
+34. App's home screen shows QR code along with Make Final Payment Option
+35. Is QR code scanned? : Yes
+36. Do you want to exit the Menu? : No
+37. Snacks program is called
+38. Is there a purchase of any Non-Alcoholic beverage? : No
+39. Is there a purchase of any Alcoholic beverage? :Yes
+40. Input: alcBevQty = 2
+41. SnacksCost = 2*7.50 + 0 = 15
+42. Is there a purchase of any candy? : Yes
+43. Input: noOfCandies =2
+44. SnacksCost = 2*1.75 + 15 = 18.5
+45. Back to main program
+46. FinalAmount = 91 + 18.5 = 109.5
+47. Is QR code scanned? : No
+48. Is "Make Final Payment" button pressed?: Yes
+49. Is Vallet.ParkingFee = 0 ? : Yes
+50. Receipt program is called
+51. Display: Total Members : 2
+52. Display: Total Admission Charges: $8
+53. Display: Type: Musical   Timing: Matinee  Total Ticket: $140
+54. Is Admission.TotalMembers > 0 ? :Yes
+55. Display: Additional Discount: $7
+56. Is main.SnackStandBill > 0? : Yes
+57. Display: Snacks: 18.5
+58. Is Vallet.ParkingFee > 0 ?: No
+59. Display: GrandTotal: 109.5 + 50 = 159.5
+60. Display: Already Paid: $50  Balance: $109.5  Total Ticket: $140
+61. Return to main program
+62. Prompt the User to pay FinalAmount and select Payment Method
+63. Is Payment Received? : yes
+64. FinalAmount = 0
+65. Is QR code Scanned? : Yes
+66. Do you want to exit the venue? : Yes
+67. Display: Balance: $0
+68. Is FinalAmount = 0? : Yes
+69. Prompt: Thankyou for the Visit.
+70. Exit
+
+
+
+
+
+
+
+
+
+
